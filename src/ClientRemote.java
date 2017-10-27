@@ -10,8 +10,8 @@ public class ClientRemote {
     public static void main(String[] args) {
         try {
             Context ctx = new InitialContext();
-            String appName = "BanqueWeb";
-            String moduleName = "BanqueWeb";
+            String appName = "BanqueEAR";
+            String moduleName = "Banque";
             String beanName = "BK";
             String remoteInterface = BanqueRemote.class.getName();
             String name = "ejb:" + appName + "/" + moduleName + "/" + beanName + "!" + remoteInterface;
